@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leituras Concluídas - O Subterfúgio</title>
+    <style>
+        /* 1. Background Principal */
+        body {
+            background-image: url('fundo1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            color: #332b2b;
+        }
+
+        /* 2. Header Unificado (Banner Sólido e Sticky) */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #5d4037; 
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        nav a {
+            color: #d7ccc8;
+            margin: 0 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        nav a:hover {
+            color: #fff;
+            border-bottom: 2px solid #388e3c; /* Verde para combinar com "Lido" */
+        }
+
+        /* 3. Área de Conteúdo */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 8px;
+            min-height: 600px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            border-bottom: 2px solid #388e3c;
+            padding-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        .livro-card {
+            width: 220px;
+            display: inline-block;
+            margin: 20px;
+            position: relative; 
+            border: 5px solid #fff;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            background-color: #fff;
+            vertical-align: top;
+        }
+
+        .livro-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .status-leitura {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            background-color: #388e3c;
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            transform: rotate(-5deg);
+            z-index: 10;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .livro-info {
+            padding: 10px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #3e2723;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📖 O Subterfúgio</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="escritores.html">Escritores</a>
+            <a href="donereads.html">Leituras</a>
+            <a href="contos.html">Contos</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="galeria.html">Dark Art</a>
+            <a href="tracks.html">Tracks</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Leituras Concluídas em 2026</h2>
+            
+            <article class="livro-card">
+                <div class="status-leitura">Lido ✓</div>
+                <img src="faithful.jpg" alt="Capa do Livro">
+                <div class="livro-info">
+                    <strong>The Faithful Executioner</strong><br>
+                    <small>Joel F. Harrington</small>
+                </div>
+            </article>
+
+            <article class="livro-card">
+                <div class="status-leitura">Lido ✓</div>
+                <img src="brain.jpg" alt="Capa do Livro">
+                <div class="livro-info">
+                    <strong>O cérebro no mundo digital</strong><br>
+                    <small>Maryanne Wolf</small>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Diário de Leituras | Fausto Pantagruel</p>
+    </footer>
+
+</body>
+</html>

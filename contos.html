@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Contos - O Subterfúgio</title>
+    <style>
+        /* 1. Background Principal */
+        body {
+            background-image: url('fundo1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            color: #332b2b;
+        }
+
+        /* 2. Header Unificado (Banner Sólido e Sticky) */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #5d4037; 
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        nav a {
+            color: #d7ccc8;
+            margin: 0 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        nav a:hover {
+            color: #fff;
+            border-bottom: 2px solid #e64a19;
+        }
+
+        /* 3. Área de Conteúdo */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.92); /* Opacidade maior para leitura de texto longo */
+            padding: 40px;
+            border-radius: 8px;
+            min-height: 600px;
+            position: relative; /* Necessário para o selo-autoria */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .selo-autoria {
+            position: absolute;
+            top: 20px;
+            right: -15px;
+            background-color: #e64a19;
+            color: white;
+            padding: 8px 15px;
+            font-size: 0.8rem;
+            transform: rotate(5deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        article {
+            margin-bottom: 60px;
+            line-height: 1.8; /* Espaçamento melhor para contos */
+        }
+
+        h2 {
+            color: #5d4037;
+            border-bottom: 2px solid #d7ccc8;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: #3e2723;
+        }
+
+        .data-conto {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #795548;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #3e2723;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📖 O Subterfúgio</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="escritores.html">Escritores</a>
+            <a href="donereads.html">Leituras</a>
+            <a href="contos.html">Contos</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="galeria.html">Dark Art</a>
+            <a href="tracks.html">Tracks</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="selo-autoria">Obra Original</div>
+
+        <section>
+            <h2>Meus Contos e Escritos</h2>
+            
+            <article>
+                <h3>Bombardo</h3>
+                <span class="data-conto">Escrito em: 18 de Fevereiro de 2026</span>
+                <p>A sineta da porta tilintou quando Bombardo adentrou a Agropecuária São Leopoldo Mandioca. O assoalho rangeu sob o peso de seus passos e de seus vastos quadríceps.</p>
+                <p>
+                    Ele retirou o chapéu com solenidade teatral e, apoiando ambas as mãos colossais sobre o balcão, declarou:
+                </p>
+                <p>— Boa tarde, nobre guardião das rações e das rédeas. Necessito um balsamo para meu equino que encontra-se claudicante, praticamente se enveredando nas searas no além.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Diário de Leituras | Criado por Fausto Pantagruel</p>
+    </footer>
+
+</body>
+</html>

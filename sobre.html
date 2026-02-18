@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - O Subterfúgio</title>
+    <style>
+        /* 1. Background Principal */
+        body {
+            background-image: url('fundo1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            color: #332b2b;
+        }
+
+        /* 2. Header Unificado (Banner Sólido e Sticky) */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('banner.png');
+            background-size: cover;
+            background-position: center;
+            background-color: #5d4037; 
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        nav a {
+            color: #d7ccc8;
+            margin: 0 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+
+        nav a:hover {
+            color: #fff;
+            border-bottom: 2px solid #e64a19;
+        }
+
+        /* 3. Área de Conteúdo */
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            min-height: 600px;
+            position: relative; /* Requisito para o Badge */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .badge-sobre {
+            position: absolute;
+            top: 20px;
+            right: -15px;
+            background-color: #5d4037;
+            color: white;
+            padding: 8px 15px;
+            font-size: 0.8rem;
+            transform: rotate(3deg);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        article {
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #5d4037;
+            border-bottom: 2px solid #d7ccc8;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #3e2723;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📖 O Subterfúgio</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="escritores.html">Escritores</a>
+            <a href="donereads.html">Leituras</a>
+            <a href="contos.html">Contos</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="galeria.html">Dark Art</a>
+            <a href="tracks.html">Tracks</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="badge-sobre">O Projeto</div>
+
+        <article>
+            <h2>Sobre o Site</h2>
+            <p>
+                <strong>O Subterfúgio</strong> é um portal dedicado à literatura clássica e contemporânea, 
+                focado em autores que exploram as profundezas da condição humana e as sombras da sociedade.
+            </p>
+            <p>
+                Este site foi desenvolvido como parte de um projeto acadêmico para praticar 
+                as propriedades de posicionamento e estilização com CSS, unindo a paixão pelos 
+                livros com o aprendizado técnico de programação web em 2026.
+            </p>
+            <p>
+                Do realismo russo às distopias modernas, cada página aqui reflete um capítulo diferente da nossa jornada literária, acompanhada de artes sombrias e trilhas sonoras que compõem a atmosfera ideal para o pensamento crítico.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Diário de Leituras | Fausto Pantagruel</p>
+    </footer>
+
+</body>
+</html>
